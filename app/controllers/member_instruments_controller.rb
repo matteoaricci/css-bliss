@@ -1,0 +1,2 @@
+class MemberInstrumentsController < ApplicationController
+end
