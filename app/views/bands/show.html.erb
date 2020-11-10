@@ -1,0 +1,20 @@
+<h1 class='band-header'><%= @band.name %></h1>
+
+<div class='member-container'>
+    <% @members.each do |member| %>
+    <div class='ind-member'>
+        <div class='member-name'><%= member.name %></div>
+        <img class='member-img' src=<%=member.img_link%> >
+    </div>
+    <% end %>
+</div>
+
+<div class='album-container'>
+    <% @albums.each do |album | %>
+    <div class='ind-album'>
+        <div class='album-name'><%= album.name %></div>
+        <img class='album-img' src=<%=album.img_link%> >
+    </div>
+    <% end %>
+</div>
+
