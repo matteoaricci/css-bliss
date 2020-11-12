@@ -1,10 +1,17 @@
-<h1 ><%= @band.name %></h1>
+<h1 class='band-name' style='text-transform: uppercase;'><%= @band.name %></h1>
 
-<div >
+<style>
+    body {
+        width: 765px;
+        margin: 0 auto;
+    }
+</style>
+
+<div class='grid-container'>
     <% @members.each do |member| %>
-    <div >
-        <div ><%= member.name %></div>
-        <img src=<%=member.img_link%> >
+    <div class='grid-item'>
+        <div class='member-name'><%= member.name %></div>
+        <img class='member-img' src=<%=member.img_link%> >
     </div>
     <% end %>
 </div>
